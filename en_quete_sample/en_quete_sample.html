@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>アンケート</title>
+</head>
+
+<body>
+  <p>
+    アンケートフォームテストです!<br />
+    テキトーに答えてね!!<br />
+  </p>
+
+  <form action="send_result.php" method="post">
+
+    <!-- お名前 -->
+    <table border="1">
+      <tr>
+        <td width="150" height="50">名前</td>
+        <td width="100"><input type="text" name="name"></td>
+      </tr>
+    </table>
+
+    <!-- 好きな果物 -->
+    <table border="1">
+      <tr>
+        <td width="150" height="50">好きな果物</td>
+        <td width="100"><input type="checkbox" name="fruits[]" value="apple"><label for="apple">リンゴ</label></td>
+        <td width="100"><input type="checkbox" name="fruits[]" value="orange"><label for="orange">オレンジ</label></td>
+        <td width="100"><input type="checkbox" name="fruits[]" value="melon"><label for="melon">メロン</label></td>
+      </tr>
+    </table>
+
+    <!-- 自由記述欄 -->
+    <table border="1">
+      <tr>
+        <td width="150">要望</td>
+        <td><textarea name="freeForm" cols="50" rows="10"></textarea></td>
+      </tr>
+    </table>
+
+    <input type="submit" value="送信" />
+  </form>
+</body>
+
+</html>
